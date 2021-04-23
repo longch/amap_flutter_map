@@ -261,11 +261,6 @@ public class MapController
     }
 
     @Override
-    public void setGestureScaleByMapCenter(boolean gestureScaleByMapCenter) {
-        amap.getUiSettings().setGestureScaleByMapCenter(gestureScaleByMapCenter);
-    }
-
-    @Override
     public void setScrollGesturesEnabled(boolean scrollGesturesEnabled) {
         amap.getUiSettings().setScrollGesturesEnabled(scrollGesturesEnabled);
     }
