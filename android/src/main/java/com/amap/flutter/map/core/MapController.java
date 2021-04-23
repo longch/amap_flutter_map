@@ -147,7 +147,8 @@ public class MapController
                 break;
             case Const.METHOD_MAP_SET_GESTURE_SCALE_CENTER:
                 if (null != amap) {
-                    amap.getUiSettings().setGestureScaleByMapCenter(true);
+                    final boolean enable = call.argument("enable");
+                    amap.getUiSettings().setGestureScaleByMapCenter(enable);
                 }
                 break;
 
