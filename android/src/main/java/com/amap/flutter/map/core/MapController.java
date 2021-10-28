@@ -168,8 +168,6 @@ public class MapController
                 mapReadyResult.success(null);
                 mapReadyResult = null;
             }
-                
-            amap.showMapText(false);
         } catch (Throwable e) {
             LogUtil.e(CLASS_NAME, "onMapLoaded", e);
         }
