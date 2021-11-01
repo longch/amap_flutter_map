@@ -103,6 +103,7 @@
                 [view removeFromSuperview];
             }
         }
+        _mapView.scaleOrigin= CGPointMake(20, _mapView.scaleOrigin.y-10);
         id markersToAdd = args[@"markersToAdd"];
         if ([markersToAdd isKindOfClass:[NSArray class]]) {
             [_markerController addMarkers:markersToAdd];
