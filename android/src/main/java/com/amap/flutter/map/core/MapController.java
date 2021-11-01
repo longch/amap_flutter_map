@@ -168,7 +168,8 @@ public class MapController
                 mapReadyResult.success(null);
                 mapReadyResult = null;
             }
-            amap.getUiSettings().setLogoBottomMargin(-100);
+            amap.getUiSettings().setLogoLeftMargin(20);
+            amap.getUiSettings().setLogoBottomMargin(-30);
         } catch (Throwable e) {
             LogUtil.e(CLASS_NAME, "onMapLoaded", e);
         }
